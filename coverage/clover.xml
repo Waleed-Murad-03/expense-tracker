@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1793337509103" clover="3.2.0">
+  <project timestamp="1793337509103" name="All files">
+    <metrics statements="39" coveredstatements="39" conditionals="20" coveredconditionals="20" methods="23" coveredmethods="23" elements="82" coveredelements="82" complexity="0" loc="39" ncloc="39" packages="3" files="9" classes="9"/>
+    <package name="src">
+      <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="7" coveredmethods="7"/>
+      <file name="App.css" path="C:\dev\expense-tracker\src\App.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="App.jsx" path="C:\dev\expense-tracker\src\App.jsx">
+        <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="7" coveredmethods="7"/>
+        <line num="12" count="16" type="stmt"/>
+        <line num="13" count="16" type="stmt"/>
+        <line num="16" count="16" type="cond" truecount="2" falsecount="0"/>
+        <line num="19" count="8" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="26" count="16" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components">
+      <metrics statements="26" coveredstatements="26" conditionals="6" coveredconditionals="6" methods="13" coveredmethods="13"/>
+      <file name="CategoryFilter.jsx" path="C:\dev\expense-tracker\src\components\CategoryFilter.jsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="6" count="16" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="14" count="80" type="stmt"/>
+      </file>
+      <file name="ExpenseForm.jsx" path="C:\dev\expense-tracker\src\components\ExpenseForm.jsx">
+        <metrics statements="18" coveredstatements="18" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
+        <line num="9" count="142" type="stmt"/>
+        <line num="10" count="142" type="stmt"/>
+        <line num="11" count="142" type="stmt"/>
+        <line num="12" count="142" type="stmt"/>
+        <line num="15" count="15" type="stmt"/>
+        <line num="16" count="15" type="stmt"/>
+        <line num="17" count="15" type="cond" truecount="2" falsecount="0"/>
+        <line num="18" count="6" type="stmt"/>
+        <line num="19" count="6" type="stmt"/>
+        <line num="21" count="9" type="stmt"/>
+        <line num="22" count="9" type="stmt"/>
+        <line num="23" count="9" type="stmt"/>
+        <line num="24" count="9" type="stmt"/>
+        <line num="27" count="142" type="stmt"/>
+        <line num="34" count="55" type="stmt"/>
+        <line num="41" count="43" type="stmt"/>
+        <line num="47" count="15" type="stmt"/>
+        <line num="50" count="568" type="stmt"/>
+      </file>
+      <file name="ExpenseItem.jsx" path="C:\dev\expense-tracker\src\components\ExpenseItem.jsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="4" count="16" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+      </file>
+      <file name="ExpenseList.jsx" path="C:\dev\expense-tracker\src\components\ExpenseList.jsx">
+        <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="6" count="16" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="11" type="stmt"/>
+        <line num="10" count="16" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.utils">
+      <metrics statements="7" coveredstatements="7" conditionals="12" coveredconditionals="12" methods="3" coveredmethods="3"/>
+      <file name="calculateTotal.js" path="C:\dev\expense-tracker\src\utils\calculateTotal.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="3" count="19" type="stmt"/>
+      </file>
+      <file name="categories.js" path="C:\dev\expense-tracker\src\utils\categories.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="2" type="stmt"/>
+      </file>
+      <file name="validateExpense.js" path="C:\dev\expense-tracker\src\utils\validateExpense.js">
+        <metrics statements="5" coveredstatements="5" conditionals="12" coveredconditionals="12" methods="1" coveredmethods="1"/>
+        <line num="3" count="22" type="cond" truecount="4" falsecount="0"/>
+        <line num="4" count="18" type="cond" truecount="6" falsecount="0"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="7" count="15" type="cond" truecount="2" falsecount="0"/>
+        <line num="8" count="10" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
