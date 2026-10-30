@@ -32,6 +32,7 @@ export default function App() {
       </div>
       <p className="summary">
         <span>Total: <span data-cy="total">{calculateTotal(visibleExpenses).toFixed(2)}</span></span>
+        <span>Showing: <span data-cy="count">{visibleExpenses.length}</span></span>
       </p>
       <ExpenseList expenses={visibleExpenses} onDelete={handleDelete} />
     </main>
