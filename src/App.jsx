@@ -18,6 +18,10 @@ export default function App() {
     setExpenses((prev) => [...prev, { ...expense, id: crypto.randomUUID() }])
   }
 
+  function handleDelete(id) {
+    setExpenses((prev) => prev.filter((e) => e.id !== id))
+  }
+
   return (
     <main className="app">
       <h1>Expense Tracker</h1>
@@ -25,7 +29,7 @@ export default function App() {
       <div className="toolbar">
         <CategoryFilter value={filter} onChange={setFilter} />
       </div>
-      <ExpenseList expenses={visibleExpenses} />
+      <ExpenseList expenses={visibleExpenses} onDelete={handleDelete} />
     </main>
   )
 }
