@@ -5,6 +5,7 @@ import { useState } from 'react'
 import ExpenseForm from './components/ExpenseForm'
 import ExpenseList from './components/ExpenseList'
 import CategoryFilter from './components/CategoryFilter'
+import { calculateTotal } from './utils/calculateTotal'
 import './App.css'
 
 export default function App() {
@@ -29,6 +30,9 @@ export default function App() {
       <div className="toolbar">
         <CategoryFilter value={filter} onChange={setFilter} />
       </div>
+      <p className="summary">
+        <span>Total: <span data-cy="total">{calculateTotal(visibleExpenses).toFixed(2)}</span></span>
+      </p>
       <ExpenseList expenses={visibleExpenses} onDelete={handleDelete} />
     </main>
   )
