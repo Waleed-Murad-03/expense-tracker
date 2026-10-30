@@ -38,3 +38,14 @@ describe('ExpenseForm', () => {
     expect(screen.getByText(message)).toHaveAttribute('data-cy', 'error')
   })
 })
+
+describe('ExpenseForm max amount', () => {
+  it('rejects amounts over 100000', async () => {
+    const user = userEvent.setup()
+    const onAdd = vi.fn()
+    render(<ExpenseForm onAdd={onAdd} />)
+    await fill(user, 'Car', '100001')
+    expect(onAdd).not.toHaveBeenCalled()
+    expect(cy('error')).toHaveTextContent('Amount must not exceed 100000')
+  })
+})

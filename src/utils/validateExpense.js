@@ -5,5 +5,6 @@ export function validateExpense({ title, amount }) {
     return 'Amount must be a number'
   }
   if (Number(amount) <= 0) return 'Amount must be greater than 0'
+  if (Number(amount) > 100000) return 'Amount must not exceed 100000'
   return null
 }
