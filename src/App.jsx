@@ -1,12 +1,18 @@
 // App
-// State: expenses - array of { id, title, amount, category }. All expense state lives here.
+// State: expenses - array of { id, title, amount, category }; filter - "All" or a category.
+// All expense state lives here; children get data and callbacks via props.
 import { useState } from 'react'
 import ExpenseForm from './components/ExpenseForm'
 import ExpenseList from './components/ExpenseList'
+import CategoryFilter from './components/CategoryFilter'
 import './App.css'
 
 export default function App() {
   const [expenses, setExpenses] = useState([])
+  const [filter, setFilter] = useState('All')
+
+  const visibleExpenses =
+    filter === 'All' ? expenses : expenses.filter((e) => e.category === filter)
 
   function handleAdd(expense) {
     setExpenses((prev) => [...prev, { ...expense, id: crypto.randomUUID() }])
@@ -16,7 +22,10 @@ export default function App() {
     <main className="app">
       <h1>Expense Tracker</h1>
       <ExpenseForm onAdd={handleAdd} />
-      <ExpenseList expenses={expenses} />
+      <div className="toolbar">
+        <CategoryFilter value={filter} onChange={setFilter} />
+      </div>
+      <ExpenseList expenses={visibleExpenses} />
     </main>
   )
 }
