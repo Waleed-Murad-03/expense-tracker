@@ -3,7 +3,6 @@
 // State: title, amount, category (form inputs) and error (validation message). Does not store the list.
 import { useState } from 'react'
 import { validateExpense } from '../utils/validateExpense'
-
 import { CATEGORIES } from '../utils/categories'
 
 export default function ExpenseForm({ onAdd }) {
